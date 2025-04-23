@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Blue background for the website */
+  color: #ffffff; /* White text for better contrast */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff; /* Keep headings white */
+}
+
+h3 {
+  color: #f0f8ff; /* Slightly lighter text for subheadings */
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-info div {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Translucent white box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info div h3 {
+  margin-top: 10px;
+}
+
+.contact-info div p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Contact Form Section */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* White text for better visibility */
+}
+
+.contact-form-container form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* White form labels */
+  font-weight: bold;
+}
+
+.contact-form-container form input,
+.contact-form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent input background */
+  color: #333333;
+  font-size: 14px;
+}
+
+.contact-form-container form textarea {
+  resize: none;
+}
+
+.contact-form-container form input:focus,
+.contact-form-container form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-form-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-container form button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Prevent Overlap with Navbar */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Blue background for the website */
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px; /* Add enough margin to prevent overlap with navbar */
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Prevent Overlap with Footer */
+.contact-form-container {
+  max-width: 600px;
+  margin: 20px auto; /* Add spacing from the footer */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* White text for better visibility */
+}
+
+/* Add bottom spacing for entire contact page */
+.contact-page {
+  padding-bottom: 100px; /* Ensure there's space above the footer */
+}
+
+/* Ensure consistent spacing across contact info */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto; /* Add spacing between sections */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-page {
+  padding-bottom: 120px; /* Add extra space at the bottom to prevent overlap with footer */
+  padding-top: 80px; /* Ensure the heading doesn't overlap with the navbar */
+}
+
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form-container button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007BFF; /* Adjust color to match your website's theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form-container button:hover {
+  background-color: #0056b3;
+}

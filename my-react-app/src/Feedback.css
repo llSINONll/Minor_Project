@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text for contrast */
+}
+
+h1, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+h3 {
+  color: #f0f8ff; /* Slightly lighter blue */
+}
+
+/* Feedback Form Section */
+.feedback-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form-container h1 {
+  margin-bottom: 30px;
+}
+
+.feedback-form-container form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.feedback-form-container form input,
+.feedback-form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+  color: #333333;
+  font-size: 14px;
+}
+
+.feedback-form-container form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.feedback-form-container form input:focus,
+.feedback-form-container form textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+}
+
+.feedback-form-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form-container form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Prevent Overlap with Navbar and Footer */
+body {
+  padding-top: 80px; /* Ensure spacing for a fixed navbar */
+  padding-bottom: 120px; /* Space at the bottom for footer */
+}
+
+.feedback-page {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
